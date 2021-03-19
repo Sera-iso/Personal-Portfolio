@@ -1,0 +1,105 @@
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 96px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+p {
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.about-paragraphs {
+  display: flex;
+  margin: 30px 0;
+}
+
+.about-paragraphs p {
+  margin: 10px;
+  text-align: center;
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.header {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 48px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+}
+
+.portfolio {
+  text-align: left;
+  margin-bottom: 40px;
+  padding: 20px 0;
+}
+
+.primary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.secondary-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
