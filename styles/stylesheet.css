@@ -1,44 +1,82 @@
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --primary-color: rgb(251, 242, 255);;
+  --secondary-color: rgb(69, 29, 88);
+  --tertiary-color: rgb(255, 176, 0);
+  --miscellaneous-color: rgb(131, 131, 131);
 }
 
 body {
-  max-width: 900px;
   display: block;
   margin: 0 auto;
-}
-
-h1,
-h2,
-h3 {
-  margin: 0;
+  background-color: var(--primary-color);
 }
 
 h1 {
   font-size: 96px;
+  font-family: 'Limelight', cursive;
+  color: var(--primary-color);
 }
 
-h2 {
-  font-size: 48px;
+.wrapper {
+  background-color: var(--secondary-color);
+  margin: 20px;
+}
+.container {
+  text-align: center;
+  margin: 26px;
 }
 
-h3 {
-  font-size: 24px;
-  opacity: 0.7;
+a {
+  color: var(--primary-color);
+  font-family: 'Cutive Mono', monospace;
 }
 
-p {
+.hero {
+  padding-top: 150px;
+}
+
+.hero h2 {
+  font-size: 26px;
+  font-family: 'Cutive Mono', monospace;
+  color: var(--tertiary-color);
+}
+
+.hero p {
   border-radius: 4px;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 26px;
+  color: var(--tertiary-color);
+  font-family: 'Cutive Mono', monospace;
+  margin-bottom: 0;
 }
 
-.signature {
-  font-family: "Caveat", cursive;
+.nav {
+  display: flex;
+  justify-content: space-between;
 }
 
+.animation {
+  margin: 80px;
+}
+
+.content-box {
+  padding: 20px;
+}
+
+.header-medium {
+  margin: 90px 0 60px;
+  font-size: 56px;
+  font-family: 'Limelight', cursive;
+  color: var(--tertiary-color);
+}
+
+.row {
+  background-color: var(--primary-color);
+  padding: 40px 10px;
+}
+
+.project {
+  margin-bottom: 20px;
+}
 .about-paragraphs {
   display: flex;
   margin: 30px 0;
@@ -56,20 +94,8 @@ p {
   font-size: 28px;
   text-decoration: none;
 }
-
 .email-link:hover {
   text-decoration: underline;
-}
-
-.header {
-  margin-top: 100px;
-  text-align: center;
-}
-
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
 }
 
 .navigation-links {
@@ -83,25 +109,18 @@ p {
   margin: 20px;
 }
 
-.portfolio {
-  text-align: left;
-  margin-bottom: 40px;
-  padding: 20px 0;
-}
-
 .primary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
+  margin-top: 20px;
+  padding: 10px 16px;
   text-decoration: none;
   text-transform: capitalize;
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
+  background-color: var(--secondary-color);
   color: white;
 }
 
 .secondary-link {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
