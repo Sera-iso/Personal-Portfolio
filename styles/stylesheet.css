@@ -6,24 +6,24 @@
 }
 
 body {
-  display: block;
-  margin: 0 auto;
   background-color: var(--primary-color);
-}
-
-h1 {
-  font-size: 96px;
-  font-family: "Limelight", cursive;
-  color: var(--primary-color);
+  text-align: center;
 }
 
 .wrapper {
   background-color: var(--secondary-color);
-  margin: 20px 10px 100px;
+  margin: 20px 20px 100px;
 }
+
 .container {
   text-align: center;
-  margin: 26px;
+  display:block;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav-item a {
@@ -35,8 +35,18 @@ h1 {
   font-family: "Cutive Mono", monospace;
 }
 
+.nav-item .active {
+  font-weight: bolder;
+}
+
 .hero {
   padding-top: 150px;
+}
+
+.hero h1 {
+  font-size: 96px;
+  font-family: "Limelight", cursive;
+  color: var(--primary-color);
 }
 
 .hero h2 {
@@ -53,70 +63,21 @@ h1 {
   margin-bottom: 0;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-}
-
 .animation {
-  margin: 80px;
+  margin: 120px;
 }
 
-.content-box {
-  padding: 20px;
-}
-
-.header-medium {
-  margin: 90px 0 40px;
-  font-size: 56px;
-  font-family: "Limelight", cursive;
-  color: var(--tertiary-color);
-}
-
-.card {
-  min-height: 220px;
-  margin: 0;
-}
-.card-title {
-  color: var(--secondary-color);
-  font-size: 24px;
-  padding: 10px;
-  min-height: 80px;
-}
-
-.card-text {
-  color: var(--miscellaneous-color);
-  padding: 10px;
-}
-
-.row {
+.project .row {
   background-color: var(--primary-color);
   padding: 40px 10px;
 }
 
-footer p {
-  text-align: center;
-  color: var(--secondary-color);
-  font-size: 20px;
-  font-family: "Cutive Mono", monospace;
-  line-height: 1;
-}
-
-footer {
-  margin-bottom:40px;
-}
-
-i {
-  color: var(--secondary-color);
-  font-size: 40px;
-}
-
-.socials {
-  text-align: center;
-}
-
 .project {
   margin-bottom: 20px;
+}
+
+.content-box {
+  padding: 20px;
 }
 
 .content-box h3 {
@@ -132,7 +93,64 @@ i {
   color: var(--primary-color);
   font-size: 24px;
   margin-bottom: 60px;
+  font-family: "Cutive Mono", monospace;
 }
+
+.header-medium {
+  margin: 90px 0 40px;
+  font-size: 56px;
+  font-family: "Limelight", cursive;
+  color: var(--tertiary-color);
+}
+
+.about {
+  padding-bottom: 40px;
+}
+
+.card {
+  min-height: 220px;
+  margin: 0;
+  border-radius: 0;
+}
+
+.card-title {
+  color: var(--secondary-color);
+  font-size: 24px;
+  padding: 10px;
+  min-height: 80px;
+}
+
+.card-text {
+  color: var(--miscellaneous-color);
+  padding: 10px;
+}
+
+
+footer p {
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-family: "Cutive Mono", monospace;
+  line-height: 1;
+}
+
+footer {
+  margin-bottom:40px;
+}
+
+i {
+  color: var(--secondary-color);
+  font-size: 40px;
+}
+
+i:hover {
+  color: var(--tertiary-color);
+}
+
+.socials {
+  margin: 30px;
+}
+
+
 .about-paragraphs {
   display: flex;
   margin: 30px 0;
@@ -141,24 +159,6 @@ i {
 .about-paragraphs p {
   margin: 10px;
   text-align: center;
-}
-
-.email-link {
-  display: flex;
-  justify-content: center;
-  color: var(--primary-color);
-  font-size: 28px;
-  text-decoration: none;
-}
-.email-link:hover {
-  text-decoration: underline;
-}
-
-.navigation-links {
-  display: flex;
-  margin-top: 40px;
-  margin-bottom: 48px;
-  justify-content: center;
 }
 
 .primary-link {
@@ -173,12 +173,4 @@ i {
   background-color: var(--secondary-color);
   color: var(--tertiary-color);
   border: 1px solid var(--secondary-color);
-}
-
-.secondary-link {
-  color: var(--tertiary-color);
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
 }
