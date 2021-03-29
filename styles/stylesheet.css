@@ -19,7 +19,7 @@ h1 {
 
 .wrapper {
   background-color: var(--secondary-color);
-  margin: 20px;
+  margin: 20px 10px 100px;
 }
 .container {
   text-align: center;
@@ -73,10 +73,15 @@ h1 {
   color: var(--tertiary-color);
 }
 
+.card {
+  min-height: 220px;
+  margin: 0;
+}
 .card-title {
   color: var(--secondary-color);
   font-size: 24px;
   padding: 10px;
+  min-height: 80px;
 }
 
 .card-text {
@@ -87,6 +92,27 @@ h1 {
 .row {
   background-color: var(--primary-color);
   padding: 40px 10px;
+}
+
+footer p {
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-family: "Cutive Mono", monospace;
+  line-height: 1;
+}
+
+footer {
+  margin-bottom:40px;
+}
+
+i {
+  color: var(--secondary-color);
+  font-size: 40px;
+}
+
+.socials {
+  text-align: center;
 }
 
 .project {
