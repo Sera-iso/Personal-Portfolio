@@ -19,6 +19,7 @@ body {
   text-align: center;
   display: block;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .nav {
@@ -166,14 +167,17 @@ i:hover {
   border: 1px solid var(--secondary-color);
 }
 
-.hero-about .content-box {
-  margin-top: 40px;
+.about-me {
+  margin-top: 150px;
+}
+
+.hero-about {
   text-align: left;
 }
 
-.hero-about .image-box {
-  margin-top: 40px;
-  float: right;
+.image-box img {
+  border: 10px solid var(--primary-color);
+  margin: 40px 20px;
 }
 
 .hero-about .image-box {
@@ -204,7 +208,51 @@ i:hover {
   color:var(--primary-color);
   text-align: left;
   padding-left: 0;
+}
 
+.hero-about i {
+  color: var(--tertiary-color);
+  font-size: 16px;
+}
+
+.about-content-box {
+   padding: 20px 20px 40px 0;
+}
+
+.about-content-box .text-small {
+  font-size: 18px;
+  color: var(--primary-color);
+  text-align: left;
+  font-weight: 200;
+}
+
+.highlight {
+  color: var(--tertiary-color);
+  text-decoration: none;
+}
+
+.content-card {
+  background: var(--primary-color);
+  text-align: left;
+  padding: 20px;
+  margin: 10px;
+
+}
+
+.content-card p {
+  font-size: 14px;
+}
+
+.img-companies {
+  border: 1px solid var(--tertiary-color);
+  margin-bottom: 16px;
+  height: 50px;
+}
+
+.img-certifications {
+  border: 2px solid #e6e6ff;
+  margin-bottom: 16px;
+  width: 100px;
 }
 
 @media (max-width: 700px) {
@@ -244,7 +292,20 @@ i:hover {
     font-size: 40px;
   }
 
-  .hero-about .content-box {
-    margin-top: 40px;
+  .hero-about {
+    text-align: center;
+  }
+
+  .about-me {
+    margin-top: 80px;
+  }
+
+  .about-content-box .text-small {
+    text-align: center;
+  }
+ 
+  .image-box img {
+  border: 10px solid var(--primary-color);
+  margin-bottom: 40px;
   }
 }
