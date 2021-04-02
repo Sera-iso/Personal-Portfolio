@@ -101,7 +101,7 @@ body {
 
 .header-medium {
   margin: 90px 0 40px;
-  font-size: 56px;
+  font-size: 46px;
   font-family: "Limelight", cursive;
   color: var(--tertiary-color);
 }
@@ -120,12 +120,17 @@ body {
   color: var(--secondary-color);
   font-size: 24px;
   padding: 10px;
-  min-height: 80px;
+  margin-bottom: 20px;
 }
 
 .card-text {
   color: var(--miscellaneous-color);
   padding: 10px;
+}
+
+.notation-container {
+  padding-left: 10px;
+  margin-top: 40px;
 }
 
 footer p {
@@ -156,18 +161,48 @@ i:hover {
   margin: 40px 20px;
   padding: 10px 16px;
   text-decoration: none;
-  text-transform: capitalize;
   background-color: var(--secondary-color);
   color: white;
 }
+
 .primary-link:hover {
   background-color: var(--secondary-color);
   color: var(--tertiary-color);
   border: 1px solid var(--secondary-color);
 }
 
+.secondary-link {
+  margin: 20px;
+  padding: 10px 16px;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+}
+
+.secondary-link:hover {
+  background-color: var(--tertiary-color);
+  color: white;
+  border: 1px solid var(--secondary-color);
+}
+
+.tertiary-link {
+  color: var(--tertiary-color);
+  text-decoration: none;
+}
+
+.tertiary-link:hover {
+  font-weight: 300;
+  color: var(--tertiary-color);
+}
+
+.game {
+  margin: 60px 0 40px;
+}
+
 .about-me {
   margin-top: 150px;
+  text-align: left;
 }
 
 .hero-about {
@@ -204,7 +239,7 @@ i:hover {
 
 .hero-about ul {
   list-style-type: none;
-  color:var(--primary-color);
+  color: var(--primary-color);
   text-align: left;
   padding-left: 0;
 }
@@ -215,13 +250,12 @@ i:hover {
 }
 
 .about-content-box {
-   padding: 20px 20px 40px 0;
+  padding: 20px 20px 40px 0;
 }
 
-.about-content-box .text-small {
+.text-small {
   font-size: 18px;
   color: var(--primary-color);
-  text-align: left;
   font-weight: 200;
 }
 
@@ -236,7 +270,6 @@ i:hover {
   padding: 20px;
   margin: 10px;
   max-width: 600px;
-
 }
 
 .content-card p {
@@ -255,13 +288,35 @@ i:hover {
   width: 100px;
 }
 
+.separator {
+  margin-top: 140px;
+  color: var(--primary-color);
+}
+
+.cv {
+  margin: 160px 0;
+  padding-bottom: 100px;
+}
+
+.cv .header-medium {
+  text-align: left;
+}
+
+.projects {
+  text-align: left;
+}
+
+.projects a {
+  margin: 140px 0;
+}
+
 @media (max-width: 700px) {
   .animation {
     display: none;
   }
 
   .animation-mobile {
-    display:block;
+    display: block;
   }
 
   .hero h1 {
@@ -303,9 +358,9 @@ i:hover {
   .about-content-box .text-small {
     text-align: center;
   }
- 
+
   .image-box img {
-  border: 10px solid var(--primary-color);
-  margin-bottom: 40px;
+    border: 10px solid var(--primary-color);
+    margin-bottom: 40px;
   }
 }
