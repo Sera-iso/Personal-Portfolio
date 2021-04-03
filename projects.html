@@ -1,12 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link ref="stylesheet" src="stylesheet.css">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Ciao, I am Serena Isone, Front-end developer based in the Netherlands. This is my portfolio, enjoy!" />
+    <title>Serena Isone Portfolio | Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <link rel="icon"
+        href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/woman-technologist-medium-skin-tone_1f469-1f3fd-200d-1f4bb.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Limelight&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/stylesheet.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e618ac2755.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Here are my projects</h1>
+    <div class="wrapper">
+        <div class="container">
+            <div class="navigation">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html#contact">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hero">
+                <p>Some of my proudest</p>
+                <h1>PROJECTS</h1>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="header-medium">REACT</h2>
+            <div class="project">
+                <div class="row">
+                    <div class="col-md-6 image-box">
+                        <img src="images/React_Weather_App.gif" class="img-fluid"
+                            alt="React weather app" />
+                    </div>
+                    <div class="col-md-6 content-box">
+                        <h3>Weather app</h3>
+                        <p>
+                            Weather app built as final project of the React course at sheCodes.
+                            <br />
+                            <br />
+                            The application is set-up via create-react-app on npm.
+                            <br />
+                            Weather data is provided by openweathermap.org.
+                            <br />
+                            Request to the openweathermap API made via axios.
+                            <br />
+                            The lovely animated icons are fetched via react-animated-weather on npm.
+                            <br />
+                            Reviews by sheCodes and my mentor Carlos Crespo. 
+                        </p>
+                        <div class="cta">
+                            <a href="https://vigorous-mirzakhani-8248d5.netlify.app/" target="_blank" rel="noreferrer" title="Javascript Weather App" class="primary-link">View App ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="header-medium">JAVASCRIPT</h3>
+            <div class="project">
+                <div class="row">
+                    <div class="col-md-6 content-box">
+                        <h3>Weather app</h3>
+                        <p>
+                            Yes, it's another weather app.
+                            <br />
+                            This time in Vanilla Javascript!
+                            <br />
+                            <br />
+                            Weather data is provided by openweathermap.org.
+                            <br />
+                            Request to the openweathermap API made via axios.
+                            <br />
+                            Reviews by shecodes.io and mentor Carlos Crespo
+                        </p>
+                        <div class="cta">
+                            <a href="https://gracious-johnson-3440af.netlify.app/" target="_blank" rel="noreferrer" title="React Weather App" class="primary-link">View App ></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 image-box">
+                        <img src="images/Vanilla-weather-app.png" class="img-fluid" alt="Javascript weather app" />
+                    </div>
+                </div>
+            </div>
+            <h3 class="header-medium">HTML/CSS</h3>
+            <div class="project">
+                <div class="row">
+                    <div class="col-md-6 image-box">
+                        <img src="images/croissant-desktop.png" class="img-fluid rounded" alt="croissant" />
+                    </div>
+                    <div class="col-md-6 content-box">
+                        <h3>A website about Croissants</h3>
+                        <p>
+                            Because why not?
+                        </p>
+                        <div class="cta">
+                            <a href="https://inspiring-murdock-b31938.netlify.app/" trget="_blank" rel="noreferrer" title="Croissants" class="primary-link">View App ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Want to collaborate or just say hi? <br />Drop me a line!</p>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/serena-isone-b3994943/?originalSubdomain=nl" alt="linkedin"
+                title="Linkedin" target="_blank"><i class="fab fa-linkedin"></i></i></a>
+            <a href="https://github.com/Sera-iso" alt="github" title="GitHub" target="_blank"><i
+                    class="fab fa-github-square"></i></i></a>
+            <a href="https://www.instagram.com/codewithsera/" alt="instagram" title="Instagram" target="_blank"><i
+                    class="fab fa-instagram-square"></i></i></a>
+        </div>
+    </footer>
 </body>
+
 </html>
