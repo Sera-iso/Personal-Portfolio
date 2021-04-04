@@ -82,17 +82,11 @@ body {
 }
 
 .project .content-box {
-  padding: 20px 0 0;
   text-align: left;
-}
-
-.content-box h3 {
-  margin: 20px 10px;
+  padding: 30px;
 }
 
 .content-box p {
-  margin: 20px 10px;
-  padding-right: 20px;
   color: var(--miscellaneous-color);
 }
 
@@ -162,7 +156,7 @@ i:hover {
 }
 
 .primary-link {
-  margin: 40px 10px;
+  margin: 40px 0;
   padding: 10px 16px;
   text-decoration: none;
   background-color: var(--secondary-color);
@@ -372,5 +366,6 @@ i:hover {
 
   .project .content-box {
     text-align: center;
+    padding-bottom: 0;
   }
 }
