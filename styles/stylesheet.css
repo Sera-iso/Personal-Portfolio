@@ -12,8 +12,8 @@ body {
 
 .wrapper {
   background-color: var(--secondary-color);
+  padding-bottom: 60px;
   margin: 20px;
-  padding-bottom: 80px;
 }
 
 .container {
@@ -81,8 +81,8 @@ body {
   margin-bottom: 20px;
 }
 
-.content-box {
-  padding: 0px 20px 40px;
+.project .content-box {
+  padding: 20px 0 0;
   text-align: left;
 }
 
@@ -111,10 +111,6 @@ body {
   font-size: 46px;
   font-family: "Limelight", cursive;
   color: var(--tertiary-color);
-}
-
-.about {
-  padding-bottom: 40px;
 }
 
 .card {
@@ -149,7 +145,7 @@ footer p {
 }
 
 footer {
-  margin-bottom: 40px;
+  margin: 50px 0;
 }
 
 i {
@@ -328,7 +324,7 @@ i:hover {
   }
 
   .hero {
-  padding: 150px 0px 50px;
+  padding: 150px 0px 20px;
 }
 
   .hero h1 {
@@ -349,8 +345,8 @@ i:hover {
   }
 
   .wrapper {
-    margin: 10px 10px;
-    padding-bottom: 100px;
+    margin: 10px;
+    padding-bottom: 50px;
   }
 
   .header-medium {
@@ -372,6 +368,9 @@ i:hover {
 
   .image-box img {
     border: 10px solid var(--primary-color);
-    margin-bottom: 40px;
+  }
+
+  .project .content-box {
+    text-align: center;
   }
 }
