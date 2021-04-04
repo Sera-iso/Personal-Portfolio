@@ -16,8 +16,8 @@ footer {
 
 footer p {
   color: var(--secondary-color);
-  font-size: 20px;
   font-family: "Cutive Mono", monospace;
+  font-size: 20px;
   line-height: 1;
 }
 
@@ -44,17 +44,17 @@ i:hover {
 }
 
 .card {
-  min-height: 300px;
+  border-radius: 0;
   display: block;
   margin: 0 auto;
-  border-radius: 0;
+  min-height: 300px;
 }
 
 .card-title {
   color: var(--secondary-color);
   font-size: 24px;
-  padding: 10px;
   margin-bottom: 20px;
+  padding: 10px;
 }
 
 .card-text {
@@ -63,9 +63,9 @@ i:hover {
 }
 
 .container {
-  text-align: center;
   display: block;
   margin: 0 auto;
+  text-align: center;
 }
 
 .content-box p {
@@ -74,9 +74,9 @@ i:hover {
 
 .content-card {
   background: var(--primary-color);
-  text-align: left;
-  padding: 20px;
   margin: 10px;
+  padding: 20px;
+  text-align: left;
 }
 
 .content-card p {
@@ -105,22 +105,22 @@ i:hover {
 }
 
 .hero h1 {
+  color: var(--primary-color);
   font-size: 96px;
   font-family: "Limelight", cursive;
-  color: var(--primary-color);
 }
 
 .hero h2 {
+  color: var(--tertiary-color);
   font-size: 26px;
   font-family: "Cutive Mono", monospace;
-  color: var(--tertiary-color);
 }
 
 .hero p {
   border-radius: 4px;
-  font-size: 26px;
   color: var(--tertiary-color);
   font-family: "Cutive Mono", monospace;
+  font-size: 26px;
   margin-bottom: 0;
 }
 
@@ -129,29 +129,29 @@ i:hover {
 }
 
 .hero-about h1 {
-  font-size: 64px;
-  font-family: "Limelight", cursive;
   color: var(--primary-color);
+  font-family: "Limelight", cursive;
+  font-size: 64px;
 }
 
 .hero-about h2 {
-  font-size: 20px;
-  font-family: "Cutive Mono", monospace;
   color: var(--tertiary-color);
+  font-family: "Cutive Mono", monospace;
+  font-size: 20px;
 }
 
 .hero-about p {
-  font-size: 20px;
   color: var(--tertiary-color);
   font-family: "Cutive Mono", monospace;
+  font-size: 20px;
   margin-bottom: 0;
 }
 
 .hero-about ul {
-  list-style-type: none;
   color: var(--primary-color);
-  text-align: left;
+  list-style-type: none;
   padding-left: 0;
+  text-align: left;
 }
 
 .hero-about i {
@@ -164,10 +164,10 @@ i:hover {
 }
 
 .header-medium {
-  margin: 90px 0 40px;
-  font-size: 46px;
-  font-family: "Limelight", cursive;
   color: var(--tertiary-color);
+  font-family: "Limelight", cursive;
+  font-size: 46px;
+  margin: 90px 0 40px;
 }
 
 .header-small {
@@ -183,8 +183,8 @@ i:hover {
 
 .img-companies {
   border: 1px solid var(--tertiary-color);
-  margin-bottom: 16px;
   height: 50px;
+  margin-bottom: 16px;
 }
 
 .img-certifications {
@@ -222,22 +222,22 @@ i:hover {
 }
 
 .notation-container {
-  padding-left: 10px;
   margin-top: 40px;
+  padding-left: 10px;
 }
 
 .primary-link {
+  background-color: var(--secondary-color);
+  color: white;
   margin: 40px 0;
   padding: 10px 16px;
   text-decoration: none;
-  background-color: var(--secondary-color);
-  color: white;
 }
 
 .primary-link:hover {
   background-color: var(--secondary-color);
-  color: var(--tertiary-color);
   border: 1px solid var(--secondary-color);
+  color: var(--tertiary-color);
 }
 
 .project {
@@ -250,8 +250,8 @@ i:hover {
 }
 
 .project .content-box {
-  text-align: left;
   padding: 30px;
+  text-align: left;
 }
 
 .projects {
@@ -263,23 +263,23 @@ i:hover {
 }
 
 .secondary-link {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--secondary-color);
   margin: 20px;
   padding: 10px 16px;
   text-decoration: none;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  border: none;
 }
 
 .secondary-link:hover {
   background-color: var(--tertiary-color);
-  color: white;
   border: 1px solid var(--secondary-color);
+  color: white;
 }
 
 .separator {
-  margin-top: 140px;
   color: var(--primary-color);
+  margin-top: 140px;
 }
 
 .socials {
@@ -292,29 +292,46 @@ i:hover {
 }
 
 .tertiary-link:hover {
-  font-weight: 300;
   color: var(--tertiary-color);
+  font-weight: 300;
 }
 
 .text-small {
-  font-size: 18px;
   color: var(--primary-color);
+  font-size: 18px;
   font-weight: 200;
 }
 
 .wrapper {
   background-color: var(--secondary-color);
-  padding-bottom: 60px;
   margin: 20px;
+  padding-bottom: 60px;
 }
 
 @media (max-width: 700px) {
+  .about-me {
+    margin-top: 80px;
+  }
+
+  .about-content-box .text-small {
+    text-align: center;
+  }
+
   .animation {
     display: none;
   }
 
   .animation-mobile {
     display: block;
+  }
+
+  .card {
+    margin-bottom: 10px;
+  }
+
+  .header-medium {
+    font-size: 40px;
+    margin: 120px 0 40px;
   }
 
   .hero {
@@ -326,10 +343,6 @@ i:hover {
     padding: 10px;
   }
 
-  .card {
-    margin-bottom: 10px;
-  }
-
   .hero h2 {
     font-size: 20px;
   }
@@ -338,25 +351,7 @@ i:hover {
     font-size: 20px;
   }
 
-  .wrapper {
-    margin: 10px;
-    padding-bottom: 50px;
-  }
-
-  .header-medium {
-    margin: 120px 0 40px;
-    font-size: 40px;
-  }
-
   .hero-about {
-    text-align: center;
-  }
-
-  .about-me {
-    margin-top: 80px;
-  }
-
-  .about-content-box .text-small {
     text-align: center;
   }
 
@@ -365,7 +360,12 @@ i:hover {
   }
 
   .project .content-box {
-    text-align: center;
     padding-bottom: 0;
+    text-align: center;
+  }
+
+  .wrapper {
+    margin: 10px;
+    padding-bottom: 50px;
   }
 }
