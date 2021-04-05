@@ -30,13 +30,25 @@ i:hover {
   color: var(--tertiary-color);
 }
 
-.about-content-box {
-  padding: 20px 20px 40px 0;
+.about-me {
+  margin: 150px 20px 0;
+  padding: 20px 20px 0;
 }
 
-.about-me {
-  margin-top: 150px;
+.about-me .content-box {
   text-align: left;
+}
+
+.about-me .header-large {
+  font-size: 64px;
+}
+
+.about-me .image-box {
+  text-align: right;
+}
+
+.about-me .text-medium {
+  font-size: 20px;
 }
 
 .animation-mobile {
@@ -47,36 +59,31 @@ i:hover {
   border-radius: 0;
   display: block;
   margin: 0 auto;
-  min-height: 300px;
+  min-height: 250px;
+  padding: 10px;
 }
 
 .card-title {
   color: var(--secondary-color);
   font-size: 24px;
   margin-bottom: 20px;
-  padding: 10px;
-}
-
-.card-text {
-  color: var(--miscellaneous-color);
-  padding: 10px;
 }
 
 .container {
   display: block;
   margin: 0 auto;
-  text-align: center;
 }
 
-.content-box p {
+.content-box .text-muted {
   color: var(--miscellaneous-color);
 }
 
 .content-card {
-  background: var(--primary-color);
+  background-color: var(--primary-color);
   margin: 10px;
   padding: 20px;
   text-align: left;
+  max-width: 600px;
 }
 
 .content-card p {
@@ -88,11 +95,7 @@ i:hover {
 }
 
 .cv {
-  margin: 160px 0;
-  padding-bottom: 100px;
-}
-
-.cv .header-medium {
+  margin: 0 40px;
   text-align: left;
 }
 
@@ -100,67 +103,9 @@ i:hover {
   margin: 60px 0 40px;
 }
 
-.hero {
-  padding: 200px 0px 120px;
-}
-
-.hero h1 {
-  color: var(--primary-color);
-  font-size: 96px;
-  font-family: "Limelight", cursive;
-}
-
-.hero h2 {
-  color: var(--tertiary-color);
-  font-size: 26px;
-  font-family: "Cutive Mono", monospace;
-}
-
-.hero p {
-  border-radius: 4px;
-  color: var(--tertiary-color);
-  font-family: "Cutive Mono", monospace;
-  font-size: 26px;
-  margin-bottom: 0;
-}
-
-.hero-about {
-  text-align: left;
-}
-
-.hero-about h1 {
+.header-large {
   color: var(--primary-color);
   font-family: "Limelight", cursive;
-  font-size: 64px;
-}
-
-.hero-about h2 {
-  color: var(--tertiary-color);
-  font-family: "Cutive Mono", monospace;
-  font-size: 20px;
-}
-
-.hero-about p {
-  color: var(--tertiary-color);
-  font-family: "Cutive Mono", monospace;
-  font-size: 20px;
-  margin-bottom: 0;
-}
-
-.hero-about ul {
-  color: var(--primary-color);
-  list-style-type: none;
-  padding-left: 0;
-  text-align: left;
-}
-
-.hero-about i {
-  color: var(--tertiary-color);
-  font-size: 16px;
-}
-
-.hero-about .image-box {
-  padding-top: 40px;
 }
 
 .header-medium {
@@ -174,6 +119,14 @@ i:hover {
   color: var(--primary-color);
   font-size: 24px;
   margin-bottom: 60px;
+}
+
+.hero {
+  padding: 200px 0px 120px;
+}
+
+.hero .header-large {
+  font-size: 96px;
 }
 
 .highlight {
@@ -296,6 +249,13 @@ i:hover {
   font-weight: 300;
 }
 
+.text-medium {
+  color: var(--tertiary-color);
+  font-family: "Cutive Mono", monospace;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
 .text-small {
   color: var(--primary-color);
   font-size: 18px;
@@ -308,12 +268,12 @@ i:hover {
   padding-bottom: 60px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .about-me {
-    margin-top: 80px;
+    margin: 80px 0 0;
   }
 
-  .about-content-box .text-small {
+  .about-me .content-box {
     text-align: center;
   }
 
@@ -329,43 +289,64 @@ i:hover {
     margin-bottom: 10px;
   }
 
+  .content-card {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .cta {
+    text-align: center;
+  }
+
+  .cv {
+    margin: 0 10px;
+  }
+
   .header-medium {
     font-size: 40px;
     margin: 120px 0 40px;
+    text-align: center;
   }
 
   .hero {
     padding: 150px 0px 20px;
   }
 
-  .hero h1 {
+  .hero .header-large {
     font-size: 60px;
     padding: 10px;
   }
 
-  .hero h2 {
+  .hero .text-medium {
     font-size: 20px;
-  }
-
-  .hero p {
-    font-size: 20px;
-  }
-
-  .hero-about {
-    text-align: center;
   }
 
   .image-box img {
     border: 10px solid var(--primary-color);
   }
 
+  .project {
+    margin: 10px;
+  }
+
   .project .content-box {
-    padding-bottom: 0;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .text-small {
     text-align: center;
   }
 
   .wrapper {
     margin: 10px;
     padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .about-me .image-box {
+    text-align: center;
   }
 }
