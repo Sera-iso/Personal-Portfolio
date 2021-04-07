@@ -44,7 +44,9 @@ i:hover {
 }
 
 .about-me .image-box {
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .about-me .text-medium {
@@ -66,7 +68,7 @@ i:hover {
 .card-title {
   color: var(--secondary-color);
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .container {
@@ -83,7 +85,7 @@ i:hover {
 }
 
 .cv {
-  margin: 0 40px;
+  margin: 50px 40px;
 }
 
 .cv .content-box {
@@ -93,6 +95,14 @@ i:hover {
   margin: 0 auto;
   padding: 20px;
   text-align: left;
+}
+
+.cv p {
+  font-size: 14px;
+}
+
+.cv ul {
+  margin-top: 30px;
 }
 
 .game {
@@ -175,8 +185,15 @@ i:hover {
   padding-left: 10px;
 }
 
+.notation-container p {
+  font-size: 12px;
+  margin-top: 40px;
+  padding-left: 10px;
+}
+
 .primary-link {
   background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
   color: white;
   margin: 40px 0;
   padding: 10px 16px;
@@ -184,9 +201,9 @@ i:hover {
 }
 
 .primary-link:hover {
-  background-color: var(--secondary-color);
-  border: 1px solid var(--secondary-color);
-  color: var(--tertiary-color);
+  background-color: var(--tertiary-color);
+  border: 1px solid var(--tertiary-color);
+  color: white;
 }
 
 .project {
@@ -196,6 +213,8 @@ i:hover {
 .project .row {
   background-color: var(--primary-color);
   padding: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .project .content-box {
@@ -316,10 +335,28 @@ i:hover {
 
 @media (max-width: 1199px) {
   .about-me .image-box {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-   .about-me .content-box {
+  .about-me .content-box {
     text-align: center;
   }
 }
+
+@media (min-width: 2000px) {
+        body::after {
+        content: "Wow you have a BIG screen!";
+        font-family:sans-serif;
+        display: block;
+        position: fixed;
+        top: 120px;
+        bottom: 0px;
+        right: 11rem;
+        font-size: 5vh;        
+        transform: rotate(90deg);
+        color: white;
+        transition: all 150ms ease-in-out;
+        }
+    }
