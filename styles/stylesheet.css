@@ -73,7 +73,7 @@ i:hover {
 
 .container {
   display: block;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .content-box .text-muted {
@@ -158,6 +158,18 @@ i:hover {
   max-height: 400px;
 }
 
+.img-mobile {
+  display: none;
+}
+
+.img-tablet {
+  display: none;
+}
+
+.img-desktop {
+  display: block;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -210,11 +222,34 @@ i:hover {
   margin-bottom: 20px;
 }
 
+.project-box img {
+  opacity: 0.7;
+}
+
+.project-box {
+  margin-bottom: 20px;
+  background-color: lightgray;
+  position: relative;
+}
+
+.project-box .card {
+  padding: 20px;
+  min-height: 0;
+  min-width: 400px;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.project-box .cta {
+  margin: 30px 0 10px;
+}
+
 .project .row {
   background-color: var(--primary-color);
   padding: 10px;
   display: flex;
-  align-items: center;
 }
 
 .project .content-box {
@@ -265,7 +300,26 @@ i:hover {
   margin: 20px;
   padding-bottom: 60px;
 }
+@media (max-width: 442px) {
+  .img-desktop {
+    display: none;
+  }
 
+  .img-tablet {
+    display: none;
+  }
+
+  .img-mobile {
+    display: block;
+  }
+
+  .project-box .card {
+    width: 100%;
+    margin-bottom: 0;
+    bottom: -170px;
+    text-align: center;
+  }
+}
 @media (max-width: 800px) {
   .about-me {
     margin: 80px 0 0;
@@ -314,6 +368,29 @@ i:hover {
     border: 10px solid var(--primary-color);
   }
 
+  .img-mobile {
+    display: none;
+  }
+
+  .img-desktop {
+    display: none;
+  }
+
+  .img-tablet {
+    display: block;
+  }
+
+  .project-box {
+    margin-bottom: 200px;
+  }
+
+  .project-box .card {
+    width: 100%;
+    margin-bottom: 0;
+    bottom: -170px;
+    text-align: center;
+  }
+
   .project {
     margin: 10px;
   }
@@ -346,17 +423,17 @@ i:hover {
 }
 
 @media (min-width: 2000px) {
-        body::after {
-        content: "Wow you have a BIG screen!";
-        font-family:sans-serif;
-        display: block;
-        position: fixed;
-        top: 120px;
-        bottom: 0px;
-        right: 11rem;
-        font-size: 5vh;        
-        transform: rotate(90deg);
-        color: white;
-        transition: all 150ms ease-in-out;
-        }
-    }
+  body::after {
+    content: "Wow you have a BIG screen!";
+    font-family: sans-serif;
+    display: block;
+    position: fixed;
+    top: 120px;
+    bottom: 0px;
+    right: 11rem;
+    font-size: 5vh;
+    transform: rotate(90deg);
+    color: white;
+    transition: all 150ms ease-in-out;
+  }
+}
