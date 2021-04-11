@@ -11,7 +11,7 @@ body {
 }
 
 footer {
-  margin: 60px 0;
+  margin: 80px 0 40px;
 }
 
 footer p {
@@ -29,6 +29,10 @@ i {
 i:hover {
   color: var(--tertiary-color);
 }
+
+.about {
+    margin: 120px 0;
+  }
 
 .about-me {
   margin: 150px 20px 0;
@@ -73,7 +77,7 @@ i:hover {
 
 .container {
   display: block;
-  margin: 10px auto;
+  margin: 0 auto;
 }
 
 .content-box .text-muted {
@@ -158,18 +162,6 @@ i:hover {
   max-height: 400px;
 }
 
-.img-mobile {
-  display: none;
-}
-
-.img-tablet {
-  display: none;
-}
-
-.img-desktop {
-  display: block;
-}
-
 .nav {
   display: flex;
   justify-content: space-between;
@@ -227,15 +219,16 @@ i:hover {
 }
 
 .project-box {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   background-color: lightgray;
   position: relative;
 }
 
 .project-box .card {
-  padding: 20px;
+  padding: 40px;
   min-height: 0;
-  min-width: 400px;
+  width: 50%;
+  max-width: 1000px;
   text-align: left;
   position: absolute;
   bottom: 0;
@@ -244,6 +237,18 @@ i:hover {
 
 .project-box .cta {
   margin: 30px 0 10px;
+}
+
+.project-box .img-desktop {
+  display: block;
+}
+
+.project-box .img-mobile {
+  display: none;
+}
+
+.project-box .img-tablet {
+  display: none;
 }
 
 .project .row {
@@ -298,28 +303,9 @@ i:hover {
 .wrapper {
   background-color: var(--secondary-color);
   margin: 20px;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
 }
-@media (max-width: 442px) {
-  .img-desktop {
-    display: none;
-  }
 
-  .img-tablet {
-    display: none;
-  }
-
-  .img-mobile {
-    display: block;
-  }
-
-  .project-box .card {
-    width: 100%;
-    margin-bottom: 0;
-    bottom: -170px;
-    text-align: center;
-  }
-}
 @media (max-width: 800px) {
   .about-me {
     margin: 80px 0 0;
@@ -368,20 +354,20 @@ i:hover {
     border: 10px solid var(--primary-color);
   }
 
-  .img-mobile {
+  .project-box .img-mobile {
     display: none;
   }
 
-  .img-desktop {
+  .project-box .img-desktop {
     display: none;
   }
 
-  .img-tablet {
+  .project-box .img-tablet {
     display: block;
   }
 
   .project-box {
-    margin-bottom: 200px;
+    margin-bottom: 184px;
   }
 
   .project-box .card {
@@ -407,6 +393,28 @@ i:hover {
   .wrapper {
     margin: 10px;
     padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 442px) {
+  .project-box .img-mobile {
+    display: block;
+  }
+
+  .project-box .img-desktop {
+    display: none;
+  }
+
+  .project-box .img-tablet {
+    display: none;
+  }
+
+  .project-box .card {
+    width: 100%;
+    margin-bottom: 0;
+    min-width: 300px;
+    bottom: -170px;
+    text-align: center;
   }
 }
 
