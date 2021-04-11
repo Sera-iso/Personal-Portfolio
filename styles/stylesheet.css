@@ -30,10 +30,6 @@ i:hover {
   color: var(--tertiary-color);
 }
 
-.about {
-    margin: 120px 0;
-  }
-
 .about-me {
   margin: 150px 20px 0;
   padding: 20px 20px 0;
@@ -78,6 +74,7 @@ i:hover {
 .container {
   display: block;
   margin: 0 auto;
+  padding-top: 24px;
 }
 
 .content-box .text-muted {
@@ -107,6 +104,25 @@ i:hover {
 
 .cv ul {
   margin-top: 30px;
+}
+
+.primary-link .fa-long-arrow-alt-right {
+  color: white;
+}
+
+.secondary-link {
+  color: var(--secondary-color);
+}
+
+.fa-long-arrow-alt-right {
+  font-size: 20px;
+  position: relative;
+  top: 2px;
+  padding: 16px 4px 10px 20px;
+}
+
+.fa-long-arrow-alt-right:hover {
+  color: white;
 }
 
 .game {
@@ -303,7 +319,7 @@ i:hover {
 .wrapper {
   background-color: var(--secondary-color);
   margin: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 100px;
 }
 
 @media (max-width: 800px) {
