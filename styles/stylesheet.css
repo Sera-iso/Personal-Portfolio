@@ -57,6 +57,10 @@ i:hover {
   display: none;
 }
 
+.active {
+  font-weight: bolder;
+}
+
 .card {
   border-radius: 0;
   display: block;
