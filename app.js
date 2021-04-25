@@ -1,4 +1,5 @@
 function playWithMe() {
+    event.preventDefault();
     let userChoice = prompt("Challenge accepted 😉. Pick your choice: rock, paper, scissors");
     userChoice = userChoice.toLowerCase();
     userChoice = userChoice.trim();
@@ -18,6 +19,7 @@ function playWithMe() {
     }
 };
 function compare(choice1, choice2) {
+    event.preventDefault();
     if (choice1 === choice2) {
         alert("It's a tie! We are both pretty good at this 🙌🏽");
     } else {
