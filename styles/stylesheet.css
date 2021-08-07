@@ -152,6 +152,7 @@ i:hover {
 }
 
 .hero {
+  height: 100vh;
   padding: 200px 0px 120px;
 }
 
