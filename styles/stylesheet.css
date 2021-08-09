@@ -191,18 +191,15 @@ i:hover {
 .nav-item a {
   color: var(--primary-color);
   font-family: "Cutive Mono", monospace;
+  text-decoration: none;
+  padding: 16px;
 }
 .nav-item a:hover {
   color: var(--tertiary-color);
-  font-family: "Cutive Mono", monospace;
 }
 
 .nav-item .active {
   font-weight: bolder;
-}
-
-.nav-link {
-  color: var(--primary-color);
 }
 
 .notation-container {
