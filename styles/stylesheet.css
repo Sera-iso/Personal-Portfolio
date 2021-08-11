@@ -136,6 +136,7 @@ i:hover {
 .header-large {
   color: var(--primary-color);
   font-family: "Limelight", cursive;
+  font-size: 96px;
 }
 
 .header-medium {
@@ -156,10 +157,6 @@ i:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.hero .header-large {
-  font-size: 96px;
 }
 
 .highlight {
