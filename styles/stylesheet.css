@@ -311,7 +311,7 @@ i:hover {
 }
 
 .project-box .img-dictionary-react {
-  background-image: url(/images/Dictionary\ desktop.png);
+  background-image: url(/images/Dictionary-desktop.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--secondary-color);
@@ -428,6 +428,23 @@ i:hover {
 
   .project-box {
     margin-bottom: 184px;
+  }
+
+  .project-box .img-weather-react {
+    background-image: url(/images/react-mobile-hero.png);
+  }
+  
+  .project-box .img-weather-javascript {
+    background-image: url(/images/javascript-mobile-hero.png);
+
+  }
+  
+  .project-box .img-dictionary-react {
+    background-image: url(/images/Dictionary-mobile.jpeg);
+  }
+  
+  .project-box .img-croissant {
+    background-image: url(/images/croissant-mobile-hero.png);
   }
 
   .project-box .card {
