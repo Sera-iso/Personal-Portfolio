@@ -215,9 +215,8 @@ i:hover {
 }
 
 .image-box img {
-  border: 10px solid var(--primary-color);
   margin: 20px 0;
-  max-height: 400px;
+  max-height: 150px;
 }
 
 .nav {
