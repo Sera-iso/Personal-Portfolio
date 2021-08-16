@@ -297,7 +297,7 @@ i:hover {
   background-repeat: no-repeat;
   background-color: var(--secondary-color);
   background-blend-mode: luminosity;
-  height: 456px;
+  height: 80vh;
 }
 
 .project-box .img-weather-javascript {
@@ -306,7 +306,7 @@ i:hover {
   background-repeat: no-repeat;
   background-color: var(--secondary-color);
   background-blend-mode: luminosity;
-  height: 456px;
+  height: 80vh;
 }
 
 .project-box .img-dictionary-react {
@@ -315,7 +315,7 @@ i:hover {
   background-repeat: no-repeat;
   background-color: var(--secondary-color);
   background-blend-mode: luminosity;
-  height: 480px;
+  height: 80vh;
 }
 
 .project-box .img-croissant {
@@ -323,8 +323,8 @@ i:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--secondary-color);
-  background-blend-mode: luminosity;
-  height: 456px;
+  background-blend-mode: screen;
+  height: 80vh;
 }
 
 .project .row {
