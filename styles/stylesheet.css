@@ -153,7 +153,7 @@ i:hover {
   color: var(--tertiary-color);
   font-family: "Limelight", cursive;
   font-size: 46px;
-  margin: 90px 0 40px;
+  margin: 50px 0 40px;
 }
 
 .header-small {
@@ -273,7 +273,6 @@ i:hover {
   background-repeat: no-repeat;
   background-color: var(--secondary-color);
   background-blend-mode: luminosity;
-  height: 80vh;
 }
 
 .project-box .img-dictionary-react {
@@ -282,7 +281,6 @@ i:hover {
   background-repeat: no-repeat;
   background-color: var(--secondary-color);
   background-blend-mode: luminosity;
-  height: 80vh;
 }
 
 .project-box .img-croissant {
@@ -291,7 +289,6 @@ i:hover {
   background-repeat: no-repeat;
   background-color: var(--secondary-color);
   background-blend-mode: screen;
-  height: 80vh;
 }
 
 .project .row {
