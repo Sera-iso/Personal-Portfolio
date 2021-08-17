@@ -30,34 +30,10 @@ i:hover {
   color: var(--tertiary-color);
 }
 
-.about-me {
-  margin: 150px 20px 0;
-  padding: 20px 20px 0;
-}
-
-.about-me .content-box {
-  text-align: left;
-}
-
-.about-me .header-large {
-  font-size: 64px;
-}
-
-.about-me .image-box {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.about-me .text-medium {
-  font-size: 20px;
-}
-
 .active {
   font-weight: bolder;
 }
   
-
 .arrow,
 .arrow:before {
   position: absolute;
@@ -167,10 +143,6 @@ i:hover {
   color: white;
 }
 
-.game {
-  margin: 60px 0 40px;
-}
-
 .header-large {
   color: var(--primary-color);
   font-family: "Limelight", cursive;
@@ -212,11 +184,6 @@ i:hover {
   border: 2px solid #e6e6ff;
   margin-bottom: 16px;
   width: 100px;
-}
-
-.image-box img {
-  margin: 20px 0;
-  max-height: 150px;
 }
 
 .nav {
@@ -386,10 +353,6 @@ i:hover {
 }
 
 @media (max-width: 800px) {
-  .about-me {
-    margin: 80px 0 0;
-  }
-
   .card {
     margin-bottom: 10px;
   }
@@ -419,10 +382,6 @@ i:hover {
 
   .hero .text-medium {
     font-size: 20px;
-  }
-
-  .image-box img {
-    border: 10px solid var(--primary-color);
   }
 
   .project-box {
@@ -479,33 +438,5 @@ i:hover {
     min-width: 300px;
     bottom: -170px;
     text-align: center;
-  }
-}
-
-@media (max-width: 1199px) {
-  .about-me .image-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .about-me .content-box {
-    text-align: center;
-  }
-}
-
-@media (min-width: 2000px) {
-  body::after {
-    content: "Wow you have a BIG screen!";
-    font-family: sans-serif;
-    display: block;
-    position: fixed;
-    top: 120px;
-    bottom: 0px;
-    right: 11rem;
-    font-size: 5vh;
-    transform: rotate(90deg);
-    color: white;
-    transition: all 150ms ease-in-out;
   }
 }
