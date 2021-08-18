@@ -267,30 +267,6 @@ i:hover {
   height: 80vh;
 }
 
-.project-box .img-weather-javascript {
-  background-image: url(/images/javascript-desktop-hero.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: var(--secondary-color);
-  background-blend-mode: luminosity;
-}
-
-.project-box .img-dictionary-react {
-  background-image: url(/images/Dictionary-desktop.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: var(--secondary-color);
-  background-blend-mode: luminosity;
-}
-
-.project-box .img-croissant {
-  background-image: url(/images/croissant-desktop-hero.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: var(--secondary-color);
-  background-blend-mode: screen;
-}
-
 .project .row {
   background-color: var(--primary-color);
   padding: 10px;
